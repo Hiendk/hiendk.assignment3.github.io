@@ -1,0 +1,84 @@
+@media screen and (max-width: 600px) {
+  #banner img {
+    width: 50%;
+    height: auto;
+  }
+
+  #nav-bar .container {
+    display: block;
+  }
+
+  #nav-bar .container .project,
+  .crefi {
+    border: none;
+    width: 150px;
+    height: 30px;
+    text-align: start;
+  }
+
+  #nav-bar .container .info,
+  .cv {
+    border: none;
+    width: 150px;
+    height: 30px;
+    text-align: start;
+  }
+
+  #nav-bar .cv {
+    margin-right: 0px;
+  }
+
+  #nav-bar .avartar {
+    visibility: hidden;
+  }
+
+  /* About */
+  #about .container {
+    padding: 0px;
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
+
+  /* Job-info */
+  #job-info .container {
+    grid-template-columns: 40%;
+  }
+
+  #certificate .container {
+    grid-template-columns: 1fr;
+  }
+
+  #certificate .cer-content {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+  }
+
+  #certificate .d-flex {
+    flex-direction: row;
+  }
+
+  #certificate .row-border {
+    border-bottom: 2px solid #bf3545;
+  }
+
+  #certificate .cer-prf {
+    border-left: none;
+  }
+
+  #project .grid {
+    grid-template-columns: 1fr;
+    width: 400px;
+  }
+
+  #project .sub-project {
+    grid-template-rows: 2fr 0.5fr 0.5fr 2fr;
+  }
+
+  #footer.container {
+    align-content: center;
+    margin-top: 30px;
+  }
+  #footer .container {
+    display: block;
+  }
+}

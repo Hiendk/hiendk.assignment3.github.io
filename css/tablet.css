@@ -1,0 +1,67 @@
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  #banner img {
+    width: 70%;
+    height: auto;
+  }
+
+  /* Navi-bar */
+  #nav-bar.container {
+    display: none;
+    margin-left: 0;
+    padding-left: 10px;
+  }
+
+  #nav-bar .avartar {
+    visibility: hidden;
+  }
+
+  /* About */
+  #about .container {
+    padding: 0;
+    margin: 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #job-info .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #experiance {
+    grid-area: 1/1/4/2;
+  }
+  #ativitive {
+    grid-area: 1/2/3/3;
+  }
+  #certificasse {
+    grid-area: 3/2/5/3;
+  }
+  #skill {
+    grid-area: 4/1/6/2;
+  }
+  #hobby {
+    grid-area: 5/2/7/3;
+  }
+
+  #certificate .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #certificate .cer-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #certificate img {
+    box-sizing: border-box;
+    width: 150px;
+    height: 100px;
+  }
+
+  #project .sub-project {
+    grid-template-rows: 2fr 1fr 1fr 10fr;
+  }
+
+  #footer .container {
+    display: block;
+  }
+}

@@ -1,0 +1,108 @@
+* {
+  margin: 0px;
+}
+
+body {
+  box-sizing: border-box;
+  align-items: center;
+}
+
+h2 {
+  /* color: blue; */
+  margin-bottom: 0;
+  border-bottom: 1.5px solid darkgray;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 300px;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* i {
+  padding: 20px 20px;
+} */
+
+.main-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 15px;
+  /* background-color: blue; */
+  padding: 15px 15px;
+  box-shadow: 0 0.5rem 1rem #888888;
+}
+
+section {
+  background-color: aliceblue;
+}
+
+#timeline {
+  grid-row: span 2;
+}
+
+.grid--2c {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+/* tao cham tron icons muc timeline */
+.bg--purple {
+  background-color: rgb(199, 196, 255);
+  padding-top: 12px;
+  padding-bottom: 15px;
+  border: solid 1.5px gray;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  margin-left: 1.5rem;
+}
+
+/* gach duoi dang cham trong noi dung cua section */
+.br-b {
+  border-bottom: dotted 1px lightskyblue;
+}
+
+#scopes .grid--2c {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* hien thi tren tablet */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #scopes .grid--2c {
+    grid-template-columns: 1fr;
+  }
+
+  .d-flex {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  /* #timeline .d-flex {
+    align-items: flex-start;
+  } */
+}
+
+/* hien thi tren mobile */
+@media screen and (max-width: 600px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+  #scopes .grid--2c {
+    grid-template-columns: 1fr;
+  }
+  .d-flex {
+    flex-direction: column;
+    align-content: center;
+  }
+}
